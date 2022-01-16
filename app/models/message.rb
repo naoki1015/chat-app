@@ -1,4 +1,5 @@
 class Message < ApplicationRecord
 belongs_to :user
 belongs_to :room
-end
+validates :content, presence: true
+end 
